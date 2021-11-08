@@ -138,22 +138,7 @@ class UserController {
       console.log(req.body.token);
       console.log(test);
 
-      // if (user) {
-      //   user.confirmed = true;
-      //   await user.save();
-
-      //   res.json({
-      //     status: 'success',
-      //     data: {
-      //       ...user.toJSON(),
-      //       token: jwt.sign({ data: user.toJSON() }, process.env.SECRET_KEY || '123', {
-      //         expiresIn: '30 days',
-      //       }),
-      //     },
-      //   });
-      // } else {
-      //   res.status(404).json({ status: 'error', message: 'Пользователь не найден' });
-      // }
+   
     } catch (error) {
       res.status(500).json({
         status: "error",
